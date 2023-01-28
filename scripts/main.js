@@ -4,63 +4,63 @@ let data = {
 			name: "Bank",
 			dataname: "bank",
 			desc: "",
-			img: "../images/R6S_Bank.webp",
+			img: "../images/siege/R6S_Bank.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Border",
 			dataname: "border",
 			desc: "",
-			img: "../images/R6S_Border.webp",
+			img: "../images/siege/R6S_Border.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Chalet",
 			dataname: "chalet",
 			desc: "",
-			img: "../images/R6S_Chalet.webp",
+			img: "../images/siege/R6S_Chalet.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Club House",
 			dataname: "club_house",
 			desc: "",
-			img: "../images/R6S_Club_House.webp",
+			img: "../images/siege/R6S_Club_House.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Kafe",
 			dataname: "kafe",
 			desc: "",
-			img: "../images/R6S_Kafe.webp",
+			img: "../images/siege/R6S_Kafe.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Oregon",
 			dataname: "oregon",
 			desc: "",
-			img: "../images/R6S_Oregon.webp",
+			img: "../images/siege/R6S_Oregon.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Skyscraper",
 			dataname: "skyscraper",
 			desc: "",
-			img: "../images/R6S_Skyscraper.webp",
+			img: "../images/siege/R6S_Skyscraper.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Theme Park",
 			dataname: "theme_park",
 			desc: "",
-			img: "../images/R6S_Theme_Park.webp",
+			img: "../images/siege/R6S_Theme_Park.webp",
             updated: "January 24, 2023"
 		},
 		{
 			name: "Villa",
 			dataname: "villa",
 			desc: "",
-			img: "../images/R6S_Villa.webp",
+			img: "../images/siege/R6S_Villa.webp",
             updated: "January 24, 2023"
 		}
 	],
