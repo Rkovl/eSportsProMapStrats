@@ -216,36 +216,34 @@ let data = {
 
 let URI = document.querySelector('html').baseURI
 console.log(URI, "URI")
-let mapContainer = document.querySelector('#mapHolder')
-let mapNav = document.querySelector('#mapNav')
+let imageContainer = document.querySelector('#imageContainer')
+let navContainer = document.querySelector('#navContainer')
 let mapSub
 
 if(URI.includes("bank")){
     console.log("inside bank if")
+
     for(const map of data.bank){
         console.log(map)
-        for(let A = 0; A<map.image.length; A++){
-            console.log(A)
-            if(A == 0){
-                mapNav.innerHTML +=`
-                <a class="nav-link" href="#${map.id}${A + 1}">${map.name}</a>
-                <nav class="nav nav-pills flex-column" id="${map.id}"> </nav>
-                `
-                console.log("in if")
-            }
-            else{
-                mapSub = document.querySelector(`#${map.id}`)
-                mapSub.innerHTML += `
-                <a class="nav-link ms-3 my-1" href="#${map.id}${A + 1}">${map.name} ${A + 1}</a>
-                `
-                console.log("in else")
-            }
 
-            mapContainer.innerHTML += `
-            <div id="${map.id}${A + 1}">
-            <img src="${map.image[A]}" alt="${map.name}" class="map-img">
-            </div>
+        if(map.name == 'Default'){
+            navContainer.innerHTML =`
+            <button class="nav-link active" id="${map.id}" data-bs-toggle="tab"  type="button" role="tab"  aria-selected="true">${map.name}</button>
+            `
+            for(const image of map.image){
+                imageContainer.innerHTML +=`
+                <div class="card bg-dark text-white col p-1 border">
+                    <img class="img-fluid" src="${image}" alt="">
+                </div>
+                `
+            }
+        }
+        else{
+            navContainer.innerHTML +=`
+            <button class="nav-link" id="${map.id}" data-bs-toggle="tab"  type="button" role="tab"  aria-selected="false">${map.name}</button>
             `
         }
+
     }
+
 }
